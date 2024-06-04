@@ -4,7 +4,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class DeliveryPriceTest {
 
     @ParameterizedTest
@@ -23,6 +22,4 @@ public class DeliveryPriceTest {
         double price = new DeliveryPrice().priceToAggregate(cart);
         assertThat(price).isEqualTo(expectedDeliveryPrice);
     }
-
 }
-
